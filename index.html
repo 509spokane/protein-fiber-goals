@@ -19,7 +19,7 @@
     --yolk:#C98A15;
     --leaf:#6E8B3D;
     --rule:rgba(27,32,25,.13);
-    --cols:20px 0.62fr 0.85fr 1.05fr 0.85fr 1.05fr 0.78fr 0.78fr;
+    --cols:20px 0.6fr 0.85fr 0.85fr 0.85fr 0.85fr 0.95fr 0.95fr;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
@@ -152,7 +152,7 @@
   .item.withshot > .num{grid-row:3}
   .item.withshot > .inote{grid-row:4}
 
-  .num{text-align:right;font-weight:500}
+  .num{text-align:right;font-weight:500;white-space:nowrap}
   .num.p{font-weight:600}
   .num.z{color:var(--soft);font-weight:400}
   .num.den{color:var(--soft);font-weight:400}
@@ -224,6 +224,8 @@
         <b><span id="t-fib">14.4</span> / <input class="goal" id="g-fib" type="number" min="0" step="1" value="30" aria-label="Fiber goal in grams"> g</b>
         <i class="prog"><s id="p-fib" class="f"></s></i>
       </div>
+      </div>
+      <div class="stats">
       <div class="stat">
         <span class="lbl">Carbs goal</span>
         <b><span id="t-carb">0</span> / <input class="goal" id="g-carb" type="number" min="0" step="5" value="225" aria-label="Carb goal in grams"> g</b>
